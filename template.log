@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.22)  6 JUL 2026 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.22)  6 JUL 2026 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,7 +833,7 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 Here is how much of TeX's memory you used:
  20385 strings out of 467871
  383273 string characters out of 5418376
- 791119 words of memory out of 5000000
+ 792119 words of memory out of 5000000
  48939 multiletter control sequences out of 15000+600000
  666330 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -842,7 +842,7 @@ Here is how much of TeX's memory you used:
 vosym.pfb><C:/Users/rocal/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-
 gyre/qbkr.pfb><C:/Users/rocal/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 tex-gyre/qbkri.pfb>
-Output written on template.pdf (1 page, 79273 bytes).
+Output written on template.pdf (1 page, 80055 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
