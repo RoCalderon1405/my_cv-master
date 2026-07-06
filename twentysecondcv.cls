@@ -37,41 +37,43 @@
 %	 MISC CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\renewcommand{\bfseries}{\color{gray}} % Make \textbf produce coloured text instead
+\renewcommand{\bfseries}{\color{gray}}
 
-\pagestyle{empty} % Disable headers and footers
+\pagestyle{empty}
 
-\setlength{\parindent}{0pt} % Disable paragraph indentation
+\setlength{\parindent}{0pt}
 
 %----------------------------------------------------------------------------------------
 %	 SIDEBAR DEFINITIONS
 %----------------------------------------------------------------------------------------
 
-\setlength{\TPHorizModule}{1cm} % Left margin
-\setlength{\TPVertModule}{1cm} % Top margin
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
 
 \newlength\imagewidth
 \newlength\imagescale
 \pgfmathsetlength{\imagewidth}{5cm}
 \pgfmathsetlength{\imagescale}{\imagewidth/600}
 
-\newlength{\TotalSectionLength} % Define a new length to hold the remaining line width after the section title is printed
-\newlength{\SectionTitleLength} % Define a new length to hold the width of the section title
+\newlength{\TotalSectionLength}
+\newlength{\SectionTitleLength}
+
 \newcommand{\profilesection}[1]{%
-	\setlength\TotalSectionLength{\linewidth}% Set the total line width
-	\settowidth{\SectionTitleLength}{\huge #1 }% Calculate the width of the section title
-	\addtolength\TotalSectionLength{-\SectionTitleLength}% Subtract the section title width from the total width
-	\addtolength\TotalSectionLength{-2.22221pt}% Modifier to remove overfull box warning
-	\vspace{8pt}% Whitespace before the section title
-	{\color{black!80} \huge #1 \rule[0.15\baselineskip]{\TotalSectionLength}{1pt}}% Print the title and auto-width rule
+	\setlength\TotalSectionLength{\linewidth}%
+	\settowidth{\SectionTitleLength}{\huge #1 }%
+	\addtolength\TotalSectionLength{-\SectionTitleLength}%
+	\addtolength\TotalSectionLength{-2.22221pt}%
+	\vspace{8pt}%
+	{\color{black!80} \huge #1 \rule[0.15\baselineskip]{\TotalSectionLength}{1pt}}%
 }
 
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
-%\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
+\newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+\newcommand{\cvportfolio}[1]{\renewcommand{\cvportfolio}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\interests}[1]{\renewcommand{\interests}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
@@ -114,12 +116,8 @@
    		\node [rectangle, fill=sidecolor, anchor=north, minimum width=9cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
 	\end{tikzpicture}
 
-	%------------------------------------------------
-
 	\begin{textblock}{6}(0.5, 0.2)
 			
-		%------------------------------------------------
-		
 		\ifthenelse{\equal{\profilepic}{}}{}{
 			\begin{center}
 				\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
@@ -129,27 +127,20 @@
 			\end{center}
 		}
 
-		%------------------------------------------------
-
 		{\Huge\color{mainblue}\cvname}
 
-		%------------------------------------------------
-
 		{\Large\color{black!80}\cvjobtitle}
-
-		%------------------------------------------------
 
 		\renewcommand{\arraystretch}{1.6}
 		\begin{tabular}{p{0.5cm} @{\hskip 0.5cm}p{5cm}}
 			\ifthenelse{\equal{\cvdate}{}}{}{\textsc{\Large\icon{\Info}} & \cvdate\\}
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \cvaddress\\}
-			%\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
-			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \cvsite\\}
+			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \cvnumberphone\\}
+			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{https://\cvsite}{\cvsite}\\}
+			\ifthenelse{\equal{\cvportfolio}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{\cvportfolio}{\cvportfolio}\\}
 			\ifthenelse{\equal{\cvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\cvmail}{\cvmail}}
 		\end{tabular}
 
-		%------------------------------------------------
-		
 		\ifthenelse{\equal{\aboutme}{}}{}{
 			\profilesection{About me}
 			\begin{flushleft}
@@ -157,10 +148,6 @@
 			\end{flushleft}
 		}
 
-		%------------------------------------------------
-
-		%------------------------------------------------
-		
 		\ifthenelse{\equal{\interests}{}}{}{
 			\profilesection{Interests}
 			\begin{flushleft}
@@ -175,7 +162,6 @@
 %	 COLOURED SECTION TITLE BOX
 %----------------------------------------------------------------------------------------
 
-% Command to create the rounded boxes around the first three letters of section titles
 \newcommand*\round[2]{%
 	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=1.6pt, minimum size=5.5mm, text height=3.6mm, fill=#2,#2,text=white](char){#1};%
 }
@@ -221,7 +207,6 @@
 
 \setlength{\tabcolsep}{0pt}
 
-% New environment for the long list
 \newenvironment{twenty}{%
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
@@ -243,7 +228,6 @@
 
 \setlength{\tabcolsep}{0pt}
 
-% New environment for the small list
 \newenvironment{twentyshort}{%
 	\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
