@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.22)  6 JUL 2026 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.22)  6 JUL 2026 17:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -736,45 +736,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 43.
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--55
+Underfull \hbox (badness 10000) in paragraph at lines 43--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--55
+Underfull \hbox (badness 10000) in paragraph at lines 43--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--55
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.56 \newline
-             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--68
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--68
+Underfull \hbox (badness 10000) in paragraph at lines 43--53
 
  []
 
@@ -785,35 +757,91 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.69 \newline
+l.54 \newline
              
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--80
+Underfull \hbox (badness 10000) in paragraph at lines 55--64
 
  []
 
 
-Overfull \hbox (0.88232pt too wide) in paragraph at lines 70--80
-\T1/qbk/m/n/10 - De-signed data per-sis-tence for pa-tient, ap-point-ment and o
-p-er-a-tional records. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--80
+Underfull \hbox (badness 10000) in paragraph at lines 55--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--80
+Underfull \hbox (badness 10000) in paragraph at lines 55--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--91
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \newline
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--73
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \newline
+             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--84
+
+ []
+
+
+Overfull \hbox (5.59718pt too wide) in paragraph at lines 75--84
+[]$ \T1/qbk/m/it/10 JavaScript, Type-Script, Re-act, An-gu-lar, Node.js, NestJS
+, .NET, SQL Server,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
 
  []
 
@@ -833,7 +861,7 @@ Package rerunfilecheck Info: File `template.out' has not changed.
 Here is how much of TeX's memory you used:
  20385 strings out of 467871
  383273 string characters out of 5418376
- 792119 words of memory out of 5000000
+ 791119 words of memory out of 5000000
  48939 multiletter control sequences out of 15000+600000
  666330 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -842,7 +870,7 @@ Here is how much of TeX's memory you used:
 vosym.pfb><C:/Users/rocal/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-
 gyre/qbkr.pfb><C:/Users/rocal/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 tex-gyre/qbkri.pfb>
-Output written on template.pdf (1 page, 80055 bytes).
+Output written on template.pdf (1 page, 79974 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
